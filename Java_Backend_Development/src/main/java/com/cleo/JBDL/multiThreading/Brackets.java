@@ -2,6 +2,8 @@ package com.cleo.JBDL.multiThreading;
 
 public class Brackets {
     public  void printBrackets(char open, char closing){
+
+        //Synchronised Block
             synchronized (this) {
                 for (int i = 0; i < 10; i++) {
                     if (i < 5)

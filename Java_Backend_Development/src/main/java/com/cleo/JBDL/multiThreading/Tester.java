@@ -24,7 +24,7 @@ public class Tester {
 
          Future<Integer> f1 = executorService.submit(()->f(x));
          Future<Integer> f2 = executorService.submit(()->g(x));
-         System.out.println(f1.hashCode() + " " + f1.get() + f2.get());
+         System.out.println( f1.get() + f2.get());
 
         Thread t1 = new A();
         t1.setPriority(7);
