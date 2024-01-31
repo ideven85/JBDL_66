@@ -63,16 +63,21 @@ public class Lists {
     public static int minimum_vertical_sum(ArrayList<ArrayList<Integer>> arr)
     {
         //Your code here
-        int sum=0,min_sum=0;
+        int sum=0,min_sum=Integer.MAX_VALUE;
         List<List<Integer>> sums = new ArrayList<>(arr.size());
         for (int i = 0; i < arr.size(); i++) {
-            sums.add(new ArrayList<>(arr.get(i).size()));
+            sums.add(new ArrayList<>());
             for (int j = 0; j < arr.get(i).size(); j++) {
-                // sums.set(j,(arr.get(j).get(i)));
+                sums.get(i).add(arr.get(j).get(i));
             }
         }
+        for(var row:sums){
+            sum=row.stream().reduce(0, Integer::sum);
+            if(min_sum>sum)
+                min_sum=sum;
+        }
 
-        return 0;
+        return min_sum;
 
     }
     public static BigInteger fib(int n){

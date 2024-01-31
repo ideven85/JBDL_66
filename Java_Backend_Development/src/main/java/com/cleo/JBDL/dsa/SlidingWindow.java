@@ -101,7 +101,7 @@ public class SlidingWindow {
             }
             //3 Elements means 3*2=6 subArrays
             int temp=right-left+1;
-            answer+=temp;
+            answer+=temp;//SubArrays will increase with each iteration
             System.out.println(answer);
         }
         return answer;

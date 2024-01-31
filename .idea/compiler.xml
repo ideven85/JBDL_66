@@ -9,10 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="JBDL (1)" />
         <module name="JBDL" />
+        <module name="Revision" />
+        <module name="Java_Backend_Development" />
         <module name="Rest_API" />
-        <module name="JBDL (2)" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JBDL (2)" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

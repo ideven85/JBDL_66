@@ -25,6 +25,7 @@
     </scm>
     <modules>
         <module>Java_Backend_Development</module>
+        <module>Revision</module>
 
     </modules>
     <properties>
