@@ -5,8 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArrayProblems {
-    public static ArrayList<Integer> largestAndSecondLargest(int sizeOfArray, int arr[])
-    {
+    public static ArrayList<Integer> largestAndSecondLargest(int sizeOfArray, int arr[]) {
         //code here.
         int max=Integer.MIN_VALUE,second_max=Integer.MIN_VALUE;
         ArrayList<Integer> answer = new ArrayList<>();
