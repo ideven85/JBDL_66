@@ -32,7 +32,7 @@ public class SlidingWindow {
 
         for (int right = 0; right < nums.length; right++) {
             curr += nums[right];
-            while (curr > k) {
+            while (curr > 0) {
                 curr -= nums[left];
                 left++;
             }
@@ -133,8 +133,9 @@ public class SlidingWindow {
         return ans;
     }
         public static void main (String[] args) {
-        int[] nums = {10,5,2,6}; int k=100;
+        int[] nums = {15,-2,2,-8,1,7,10,23}; int k=0;
         SlidingWindow sl = new SlidingWindow();
-        System.out.println(sl.numSubarrayProductLessThanK(nums,k));
+            System.out.println(sl.findLength(nums,k));
+      //  System.out.println(sl.numSubarrayProductLessThanK(nums,k));
     }
 }
